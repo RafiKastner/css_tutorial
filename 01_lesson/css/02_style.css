@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* */
+
+h1 {
+    border: 2px solid black ;
+    /* px is absolute value
+    unit so not always the best option becuase 
+    it can't change depending on user settings and whatnot*/
+    width: 50%;
+    /* good for sizing with width*/
+    font-size: 3rem;
+    padding: .2em;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+    color: black;
+    min-height: 100vh;
+}
+
+main {
+    width: 50vw;
+}
+
+p {
+    font-size: 1.5rem;
+    /* rem looks at root (that being html element)
+    and is relative. This is what to use*/
+    width: 50ch;
+    /* length of character and in this case x50 */
+}
+
+span {
+    font-size: 1.5em;
+    /* like rem but looks at element (kinda parent) not root
+    well not exactly. It looks at font size of
+    current element but that is hereditary so its
+    as if its looking at the parent*/
+}
